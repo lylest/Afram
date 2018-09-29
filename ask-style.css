@@ -312,3 +312,82 @@ nav{
 	height: 0px;
 	border:#333;
 }
+
+ #results{
+ 	 width:120px;
+ 	 height:25px;
+ 	 border-bottom: 4px solid #5c7eb4;
+ 	 margin-top: 10px;
+ 	 margin-left: 10px;
+ }
+ #results h1{
+ 	font-size: 12px;
+ 	color: #444;
+ 	font-family: arial;
+
+ }
+ #main-results{
+ 	 width: 100%;
+ 	 height: auto;
+ 	
+
+ }
+ #result-one{
+ 	width:60%;
+ 	margin-left: 10px;
+ 	height:auto;
+ 	border-bottom: 1px solid #ccc;
+ 	margin-top: 8px;
+
+ }
+ #result-one p{
+ 	font-size: 12px;
+ 	color: #444;
+ 	font-family: arial;
+ 	margin-left: 20%;
+ 	padding-top: 8px;
+
+
+ 	}
+ 	#result-one input[type="text"]{
+ 		width: 0px;
+ 		height: 0px;
+ 		font-size: 0px;
+ 		border:0px;
+
+ 	}
+ 	
+ 	#result-one button{
+ 	margin-left: 20%;
+ 	background-color: #fff;
+ 	border:0px;
+ 	font-size: 12px;
+ 	color: #15B846;
+ 	font-family: arial;
+ 	text-align: center;
+ 	padding-top: 6px;
+ 	text-decoration: underline;
+
+
+ 	}
+ 		#result-one button:hover{
+ 	
+ 	color: #5c7eb4;
+
+ 	}
+
+ 	#result-one h1{
+ 	font-size: 12px;
+ 	color: #15B846;
+ 	font-family: arial;
+ 	text-align: center;
+ 	padding-top: 6px;
+ 	text-decoration: underline;
+
+
+ 	}
+ 		#result-one h1:hover{
+ 	
+ 	color: #5c7eb4;
+
+ 	}
