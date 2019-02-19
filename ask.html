@@ -1,199 +1,93 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>www.afram.com/ask-page</title>
-	<link rel="stylesheet" type="text/css" href="ask-style.css">
-</head>
-<body>
-	<nav></nav>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Afram/ask</title>
+    <link rel="stylesheet" href="css/master.css">
+     <link rel="shortcut icon" href="img/afram_logo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
+  <body>
 
-<!-- "main-ask"  is the main div of the whole page that everything will go inside this div box-->
+    <nav>
+         <a href="index.html"><p>Afram</p></a>
+       <a href="profile.html"><button>John Doe</button></a>
+    </nav>
 
-<div id="main-ask">
+       <div class="main-chat">
+         <div id="chat-box">
+                  <div class="info-bar">
+                      <div class="icon"><img src="img/user.png" alt=""></div><!-- HACK: icon -->
+                      <div class="name"><p>John doe</p></div> <!-- HACK: name -->
+                  </div>   <!-- HACK: info bar -->
 
-	 <!--this is the search form-->
-        <div id="search-form">
-        	<form>
-               <input type="text" name="search-item" placeholder="search a question">
-                <button type="submit">Ask</button>
-        	</form>
-        	
-        </div><!-- search form ends here-->
+                  <div class="para">
 
-     <div id="latest"><h2>Latest</h2></div> 
-     
-   <!-- below is the question main box(div) which is going to have the question, user icon and time the question was asked -->
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
 
- <div id="main-question-box">
-   	<div class="top-bar"><!-- this contains user and question info-->
-   		<div class="user-icon"><img src="img/user3.png"></div>
-   		<div class="question-info"><p>Joseph alibariki osumu</p><p>12 september 2018</p></div>
-
-   	</div><!-- top bar ends here-->
-   	<div id="actual-question">
-   		<p>How to learn java using my smartphone and books?
-   			 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-<!-- this hidden input contains question ID which is going to be used for jquery when fetching the related replies-->
-<input id="more" type="text" name="">
-   		.</p>
-   	</div><!-- actual question ends here-->
-
-   	<div id="bottom-bar"><!-- this have like button,reply form-->
-   		<div id="comment-button">
-   			<form>
-
-   				<button>122<img src="img/comment.png" width="27" height="27"></button>
-   			</form> 
-   		</div><!-- comment-button ends here-->
-   		
-   		<div id="add-answer">
-   			<form method="" action="extra.php">
-   				<textarea placeholder="Add answer"></textarea>
-
-   		</div><!-- add answer form ends here-->
-   		<div id="send-button">
-   			<button type="submit" name="
-   			">send</button>
-   		</div>
-
-   	</form>
-   		
-   	</div><!-- bottom bar ends here-->
-</div><!-- question box ends here-->
-
-<div id="reply-line"><!-- this shows the connection btn question and answers-->
- <div id="little"></div>
-	
-</div><!-- REPLY LINE ENDS HERER-->
-
-<!-- this is answers down replies boxes -->
-     
-     <div id="answer-box">
-     	<div class="answer-top-bar">
-     		<div class="user-icon"><img src="img/user3.png"></div>
-     		<div class="user-name"><p>joseph doe&emsp;|&emsp;18 Febuary 2018</p></div>
-     		
-     	</div><!-- answerTopBar Ends-->
-
-     	   <div id="actual-reply">
-     	   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-     	   	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-     	   	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-     	   	</p>
-     	   	
-     	   </div><!--actual reply div ends here-->
-
-    <div class="answer-bottom-bar">
-    
-    	<div class="like">
-    		<form>
-    			<input type="text" name="commentiID">
-    		<button><img src="img/like1.png"></button>
-    	</div><!--likeENDSHERE-->
-    	<div class="number"><p>200</p></div>
-    	
-    	<div class="dislike">
-    		<form>
-    			<input type="text" name="commentiID">
-    		<button><img src="img/dislike.png"></button>
-    	</div>
-    	<div id="number2"><p>12</p></div>
-    	
-    </div> <!-- answerBOTTOMBar Ends-->   
-     	
-     </div><!-- answerBox ends here-->
-
-      <!-- this is just a line to show connection btn answers-->
-     <div id="line2"></div>
-
-     <div id="answer-box">
-     	<div class="answer-top-bar">
-     		<div class="user-icon"><img src="img/user3.png"></div>
-     		<div class="user-name"><p>joseph doe&emsp;|&emsp;18 Febuary 2018</p></div>
-     		
-     	</div><!-- answerTopBar Ends-->
-
-     	   <div id="actual-reply">
-     	   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-     	   	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-     	   	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-     	   	</p>
-     	   	
-     	   </div><!--actual reply div ends here-->
-
-    <div class="answer-bottom-bar">
-    
-    	<div class="like">
-    		<form>
-    			<input type="text" name="commentiID">
-    		<button><img src="img/like1.png"></button>
-    	</div><!--likeENDSHERE-->
-    	<div class="number"><p>200</p></div>
-    	
-    	<div class="dislike">
-    		<form>
-    			<input type="text" name="commentiID">
-    		<button><img src="img/dislike.png"></button>
-    	</div>
-    	<div id="number2"><p>12</p></div>
-    	
-    </div> <!-- answerBOTTOMBar Ends-->   
-     	
-     </div><!-- answerBox ends here-->
-
-    
-
-     <div id="main-question-box">
-   	<div class="top-bar"><!-- this contains user and question info-->
-   		<div class="user-icon"><img src="img/user3.png"></div>
-   		<div class="question-info"><p>Joseph alibariki osumu</p><p>12 september 2018</p></div>
-
-   	</div><!-- top bar ends here-->
-   	<div id="actual-question">
-   		<p>How to learn java using my smartphone and books?
-   			 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-   			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-   			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-   	</div><!-- actual question ends here-->
-
-   	<div id="bottom-bar"><!-- this have like button,reply form-->
-   		<div id="comment-button">
-   			<form>
-   				<button>122<img src="img/comment.png" width="27" height="27"></button>
-   			</form> 
-   		</div><!-- comment-button ends here-->
-   		
-   		<div id="add-answer">
-   			<form method="" action="extra.php">
-   				<textarea placeholder="Add answer"></textarea>
-
-   		</div><!-- add answer form ends here-->
-   		<div id="send-button">
-   			<button type="submit" name="
-   			">send</button>
-   		</div>
-
-   	</form>
-   		
-   	</div><!-- bottom bar ends here-->
-</div><!-- question box ends here-->
-<br><br>
-
-
-	
-
-	
-</div><!-- main-ask div ends here-->
+                   aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <div class="inside-img">
+                               <div class="download">download 1.2 Mb</div>
+                                <img src="img/sample.png" alt="">
+                     </div><!-- HACK: inside -->
+                  </div><!-- HACK: para --><br>
+             </div><!-- HACK: chat box -->
 
 
 
-</body>
+             <div id="chat-box">
+                      <div class="info-bar">
+                          <div class="icon"><img src="img/user.png" alt=""></div><!-- HACK: icon -->
+                          <div class="name"><p>Alice doe</p></div> <!-- HACK: name -->
+                      </div>   <!-- HACK: info bar -->
+
+                      <div class="para" style="border-left:1.5px solid #5c78ab";>
+
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+
+                       aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                         <div class="file-box">
+                               <div id="file-bar">
+                                  <div id="file-img"><img src="img/pdf.png"></div> <!-- HACK: file img -->
+                                  <div id="file-xp">
+                                    <p>Php mysqli book</p>
+                                    <a href="#">download 1.2 Mb</a>
+                                  </div><!-- HACK: file name -->
+                               </div><!-- HACK: file bar -->
+                         </div> <!-- HACK: file box -->
+                      </div><!-- HACK: para --><br>
+                 </div><!-- HACK: chat box --><br><br>
+
+       </div><!-- HACK: main cgat -->
+
+       <div class="input">
+
+           <div class="words">
+             <form>
+              <textarea name="name" rows="8" cols="80" placeholder="start to type.."></textarea>
+            </div><!-- HACK: attact -->
+
+              <input  id="file-input" type="file" name="" value="">
+
+              <div class="img">
+                <label for="file-input">
+                <img src="img/file.png" alt=add img"" title="add picture">
+                </label>
+              </div><!-- HACK: attact -->
+              <div class="img"><button type="button" name="button">send</button></div><!-- HACK: attact -->
+              </form>
+       </div><!-- HACK name="" value=""> -->
+
+  </body>
 </html>
